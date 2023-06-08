@@ -1,0 +1,192 @@
+body {
+  font-family: "微软雅黑";
+}
+.title {
+  font-size: 24px;
+}
+td {
+  font-size: 14px;
+}
+table {
+  margin: 0 auto;
+  width: 1000px;
+}
+th,
+td {
+  text-align: center;
+  height: 44px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+td {
+  border-top: none;
+  border-left: none;
+}
+tr td:first-child {
+  border-left: 1px solid #ccc;
+}
+tr td.bl0 {
+  border-left: 0;
+}
+.el-select {
+  width: 100%;
+}
+ /deep/ .el-textarea__inner,
+ /deep/ .el-input__inner {
+  border: none;
+}
+.date span {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+}
+.date span:nth-child(1) {
+  width: 50px;
+}
+.date span /deep/ .el-input__inner {
+  padding: 0;
+}
+.date span /deep/ .el-input {
+  padding: 0;
+  width: 100%;
+}
+.date span /deep/ .el-input input {
+  text-align: center;
+}
+ /deep/ .el-form-item {
+  margin-bottom: 0;
+}
+ /deep/ .el-form-item__content {
+  margin-left: 0 !important;
+}
+ /deep/ .el-form-item__error {
+  bottom: 0;
+  top: auto;
+}
+ /deep/ .el-input.is-disabled .el-input__inner {
+  background-color: #fff;
+}
+i {
+  color: #f56c6c;
+}
+@media screen and (max-width: 768px) {
+  table {
+    margin: 0 auto;
+    width: 100%;
+  }
+  table,
+  thead,
+  tbody,
+  tr,
+  th,
+  td {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 12px;
+  }
+  th,
+  td {
+    border: none;
+    height: auto;
+    margin-bottom: 5px;
+  }
+  td {
+    text-align: left;
+    padding: 0;
+  }
+  td[radio] {
+    padding: 10px 0;
+  }
+  td[radio] label {
+    margin-bottom: 10px;
+  }
+  [flex] {
+    display: flex;
+  }
+  [flex] [f1] {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  [flex] [f1][mb10] {
+    margin-bottom: 10px;
+  }
+  [flex] [f1] .el-form-item {
+    margin-bottom: 0;
+  }
+  [flex] [f1] .el-form-item /deep/ .el-input__inner {
+    border-radius: 0;
+    border-right: 0;
+  }
+  [flex] [f1]:last-child .el-form-item /deep/ .el-input__inner {
+    border-right: 1px solid #ccc;
+  }
+  [mt20] {
+    margin-top: 20px;
+  }
+  [mb20] {
+    margin-bottom: 20px;
+  }
+  [mb10] {
+    margin-bottom: 10px;
+  }
+  .sign {
+    display: flex;
+  }
+  .sign td {
+    width: 20%;
+    white-space: pre-wrap;
+    padding: 0 ;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  .sign-cont td /deep/ .el-input__inner {
+    border-right: 0;
+    border-radius: 0;
+  }
+  .sign-cont td:last-child /deep/ .el-input__inner {
+    border-right: 1px solid #ccc;
+  }
+   /deep/ .el-select {
+    margin-bottom: 25px;
+  }
+   /deep/ .el-select .el-input__inner {
+    margin-bottom: 0;
+  }
+   /deep/ .el-input__inner {
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+  }
+   /deep/ .el-input__inner[mb0] {
+    margin-bottom: 0;
+  }
+   /deep/ .el-input__inner[bb0] {
+    border-bottom: 0;
+  }
+   /deep/ .el-form-item {
+    width: 100%;
+  }
+   /deep/ .el-form-item__error {
+    bottom: auto;
+    top: 65%;
+  }
+  .date {
+    display: flex;
+    align-items: center;
+  }
+  .date span /deep/ .el-input input {
+    border: none;
+  }
+  tr td:first-child {
+    border-left: none;
+  }
+  .title {
+    font-size: 16px;
+  }
+   /deep/ .el-textarea__inner {
+    border: 1px solid #ccc;
+  }
+}
